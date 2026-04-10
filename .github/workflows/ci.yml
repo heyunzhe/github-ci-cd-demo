@@ -36,7 +36,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASS }}
           script: |
-            docker pull heyunzhe/ci-demo:latest
+            docker pull qingyejiu/ci-demo:latest
             docker stop ci-demo || true
             docker rm ci-demo || true
-            docker run -d --name ci-demo heyunzhe/ci-demo:latest
+            docker run -d --name ci-demo qingyejiu/ci-demo:latest
