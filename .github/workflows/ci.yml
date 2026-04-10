@@ -19,10 +19,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: 构建镜像
-        run: docker build -t heyunzhe/ci-demo:latest .
+        run: docker build -t qingyejiu/ci-demo:latest .
 
       - name: 推送镜像
-        run: docker push heyunzhe/ci-demo:latest
+        run: docker push qingyejiu/ci-demo:latest
 
   deploy:
     needs: build-and-push
